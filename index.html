@@ -1,0 +1,1581 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <!--Slavic characters, make work on all devices, important for mobile-->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="Domagoj Škender">
+    <!-- icon for browser tab: -->
+    <link rel="icon"
+        href="data:image/jpeg;base64,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">
+    <!-- bootstrap -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <!-- font awesome icons - use by adding to css: font-family: "FontAwesome"; + content: "\f2bb";-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- Google font -->
+    <!-- font-family: 'PT Serif', serif; -->
+    <link href="https://fonts.googleapis.com/css2?family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+        rel="stylesheet">
+
+
+
+    <!-- style starts here -->
+    <style>
+        /* selecting text from page also in red to maku sure color scheme is constant */
+
+
+
+        ::-moz-selection {
+            /* Code for Firefox */
+            background: rgb(255, 89, 89);
+        }
+
+        ::selection {
+            background: rgb(255, 89, 89);
+        }
+
+
+        * {
+            margin: 0;
+            box-sizing: border-box;
+            color: #000000;
+        }
+
+
+        body {
+            height: 100vh;
+            margin: 0 0 0 0;
+            padding: 0 0 0 0;
+            font-family: 'PT Serif', serif;
+            /*MAIN FONT!!!*/
+            
+        }
+
+
+
+
+        a {
+            color: #000000;
+        }
+
+        a:hover {
+            color: rgb(255, 89, 89);
+
+        }
+
+
+
+        .container {
+            /*needs to be table*/
+            display: table;
+            margin: 0 0 0 0;
+            padding: 0 0 0 0;
+            height: 100%;
+            width: 100%;
+            min-width: 100%;
+            content: "";
+            clear: both;
+        }
+
+        .col {
+            float: left;
+            padding: 0;
+            height: 100%;
+            /*needs to be table-cell!*/
+            display: table-cell;
+            padding: 10vh;
+            position: relative;
+
+        }
+
+        .left {
+            width: 25%;
+            background: #353439;
+            color: #FFFFFF;
+
+        }
+
+        .right {
+            width: 75%;
+            background: #FFFFFF;
+        }
+
+
+
+
+
+        .grey-ital {
+            font-style: italic;
+            color: #a1a1a1;
+        }
+
+        /*Font awesome icons before:*/
+        .grey-ital:before {
+            font-family: "FontAwesome";
+            content: "\f2bb";
+            padding-right: 6px;
+            font-style: normal;
+            vertical-align: middle;
+            font-weight: 700;
+            color: #000000;
+
+        }
+
+
+
+        .grey-ital-oec {
+            font-style: italic;
+            color: #ececec;
+            text-shadow: 1px 1px 3px rgb(238, 238, 238);
+        }
+
+
+
+
+        .pic-frame {
+            display: block;
+            /* vertical-align: middle; */
+            text-align: center;
+            margin-top: 30px;
+            margin-bottom: 20px;
+            height: fit-content;
+        }
+
+        .pic {
+            border-radius: 50%;
+            height: 150px;
+            width: 150px;
+            box-shadow: 5px 5px rgba(0, 0, 0, 0.199);
+            transition: transform .2s;
+        }
+
+        .pic:hover {
+            transform: scale(1.05);
+        }
+
+
+        .contact {
+            padding: 0;
+        }
+
+
+
+
+        .contact-p {
+            margin-bottom: 8px;
+        }
+
+
+        /*Needs sticky position so it doesn't scroll with content on right side and push nav-dots to bottom*/
+        div.col.left {
+            margin: 0 0 0 0;
+            padding: 0 0 0 0;
+            /*This is so the dots can stick to the bottom*/
+            position: relative;
+
+        }
+
+        div.col.right {
+            margin: 0 0 0 0;
+            padding: 0 0 0 0;
+            padding-top: 20px;
+            padding-left: 25px;
+            padding-right: 25px;
+        }
+
+
+        .slideshow-container {
+            top: 60px;
+            position: sticky;
+            position: -webkit-sticky;
+
+        }
+
+
+
+        /**************** make responsive (left and right column stack on mobile), various reactions to mobile screen ****************/
+        @media only screen and (max-width: 600px) {
+            .col {
+                display: block;
+                width: 100%;
+                padding: 0 0 0 0;
+                margin: 0 0 0 0;
+                height: 100vh;
+                min-height: fit-content;
+            }
+
+            .pic {
+                height: 20vh;
+                width: 20vh;
+            }
+
+
+            .btn-group {
+                display: block;
+                float: left;
+                width: 100%;
+                font-size: 10vh;
+            }
+
+            .nav-button {
+                display: block;
+                width: 100%;
+                height: 20px;
+                font-size: 4vh;
+            }
+
+
+            /*Remove "O meni" etc. as changing title on mobile*/
+            .selected-topic {
+                display: none;
+            }
+
+
+
+            .italicquote {
+                font-size: 2.5vh;
+            }
+
+            .skills-col {
+                display: block;
+                width: 100%;
+            }
+
+
+
+            /*Slides no longer follow scrolling on mobile*/
+            .slideshow-container {
+                position: relative;
+                top: 10px;
+            }
+
+            .pic-frame {
+                margin-bottom: 0px;
+            }
+
+
+
+
+
+
+        }
+
+        /******************END OF MOBILE SCREEN PARAMETERS******************/
+
+
+
+
+
+        /* .italicquote {
+      font-size: 3vh;
+  } */
+
+        .italicquote {
+            color: #FFFFFF;
+            font-style: italic;
+            font-weight: lighter;
+            text-align: justify;
+            padding-top: 20px;
+            padding-left: 20px;
+            padding-right: 20px;
+            
+            /* Inability to select removed: usecase of potential employer wanting to quickly Google Minidata or Mt Olympus */
+            /* -webkit-user-select: none;
+            -khtml-user-select: none;
+            -moz-user-select: none;
+            -ms-user-select: none;
+            -o-user-select: none;
+            user-select: none; */
+        }
+
+
+
+        .quote {
+            color: #FFFFFF;
+            text-shadow: 3px 2px rgba(0, 0, 0, 0.418);
+        }
+
+        /*Line dividing 2 highlights*/
+        hr.white-line {
+            border-top: 1px solid rgb(207, 207, 207);
+            border-bottom: 1px solid rgb(207, 207, 207);
+        }
+
+
+        /*Still problematic, won't keep size to fit contents, size hardcoded to 50px for now*/
+        .navbar {
+            height: 50px;
+            display: block;
+            padding: 0 0 0 0;
+            margin: 0 0 0 0;
+            margin-bottom: 20px;
+
+        }
+
+        .selected-topic {
+            float: left;
+            padding: 0 0 0 0;
+            margin: 0 0 0 0;
+        }
+
+
+
+        .nav-button {
+            display: inline-block;
+            background-color: transparent;
+            border-style: none;
+            margin: 0 0 0 0;
+            padding: 0 0 0 0;
+            margin-right: 15px;
+            text-align: left;
+            height: 50px;
+            position: relative;
+        }
+
+
+        /*defining the underline element and its transition*/
+        .nav-button:after {
+            position: absolute;
+            content: "";
+            top: 0;
+            left: 0;
+            width: 0;
+            height: 100%;
+            background-color: transparent;
+            transform-origin: left;
+            transition: width .25s ease;
+            border-bottom: 2px solid rgb(245, 0, 0);
+
+        }
+
+
+        /*button underline appears on hover over button*/
+        .nav-button:hover:after {            
+            width: 100%;
+        }
+
+
+        /*removes standard ugly blue outline on button that has focus*/
+        .nav-button:focus {
+            outline: none;
+            
+        }
+
+        /*button with focus has permanent underline*/
+        .nav-button:focus:after {
+            outline: none;
+            width: 100%;
+        } 
+
+
+        .btn-act:after {
+            position: absolute;
+            content: "";
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: transparent;
+            transform-origin: left;
+            transition: width .25s ease;
+            border-bottom: 2px solid rgb(245, 0, 0);
+        }
+
+
+
+
+        .btn-group {
+            margin: 0 0 0 0;
+            padding: 0 0 0 0;
+            float: right;
+            font-size: 15px;
+        }
+
+        /* makes gap between buttons and content displayed on mobile - visually better */
+        @media only screen and (max-width: 600px) {
+            .btn-group {
+                margin: 0 0 20px 0;
+            }
+        }
+
+        .content {
+            display: block;
+        }
+
+
+        /*Left side highlight reel dots stick while scrolling*/
+        .dot-container-2 {
+            position: sticky; 
+            /* left:50%; 
+            transform: translateX(-50%); 
+                -webkit-transform: translateX(-50%);
+                -moz-transform: translateX(-50%);
+                -ms-transform: translateX(-50%);
+                -o-transform: translateX(-50%); */
+            top: 95vh; 
+            padding-bottom: 8px;
+            text-align: center;
+
+        }
+
+        /*Dots don't move with scroll anymore on mobile - position absolute*/
+        @media only screen and (max-width: 600px) {
+            .dot-container-2 {
+                position: absolute; 
+                left:50%; 
+                transform: translateX(-50%); 
+                -webkit-transform: translateX(-50%);
+                -moz-transform: translateX(-50%);
+                -ms-transform: translateX(-50%);
+                -o-transform: translateX(-50%);
+            /*Uncomment this line and move dots cont 2 one div away (out) of slider to keep dots at bottom*/
+            bottom: 0; 
+            padding-bottom: 10px;
+            }
+        }
+        
+        
+
+
+        .dot {
+            cursor: pointer;
+            height: 2.5vh;
+            width: 2.5vh;
+            margin: 10px 2px 0 10px;
+            background-color: #bbb;
+            border-radius: 50%;
+            display: inline-block;
+            transition: background-color 0.6s ease;
+        }
+
+
+        .active,
+        .dot:hover {
+            background-color: #717171;
+        }
+
+
+
+        .mySlides {
+            display: none;
+        }
+
+
+        /* Fading animation */
+        .fade {
+            -webkit-animation-name: fade;
+            -webkit-animation-duration: 1.5s;
+            animation-name: fade;
+            animation-duration: 1.5s;
+            /*fill-mode: forwards to make sure text stays after fading in*/
+            animation-fill-mode: forwards;
+        }
+
+        @-webkit-keyframes fade {
+            from {
+                opacity: .4
+            }
+
+            to {
+                opacity: 1
+            }
+        }
+
+        @keyframes fade {
+            from {
+                opacity: .4
+            }
+
+            to {
+                opacity: 1
+            }
+        }
+
+
+
+
+        /**********    MEAT GROUP STYLING GOES HERE       *********************/
+
+        .volontiranje {
+            display: none;
+        }
+
+        .radno-isk {
+            display: none;
+        }
+
+        .obrazov {
+            display: none;
+        }
+
+        .skills {
+            /*Just so it doesn't display right away, JS make it display: table;  on clicking assigned button*/
+            display: none;
+            width: 100%;
+            table-layout: fixed;
+            vertical-align: top;
+        }
+
+        /* is child of skills, columns under skills tab */
+        .skills-col {
+            display: table-cell;
+            padding-top: 15px;
+            width: fit-content;
+
+        }
+
+
+        /*Remove standard bullets from skills list*/
+        ul {
+            list-style-type: none;
+            padding-left: 0;
+            padding-top: 10px;
+        }
+
+        .skill-list-it li:before {
+            font-family: "FontAwesome";
+            content: "\f0ad";
+            padding-right: 5px;
+            font-style: normal;
+            vertical-align: middle;
+            font-weight: 600;
+            color: #000000;
+        }
+
+
+        .skill-list-soft li:before {
+            font-family: "FontAwesome";
+            content: "\f0b1";
+            padding-right: 5px;
+            font-style: normal;
+            vertical-align: middle;
+            font-weight: 100;
+            color: #000000;
+        }
+
+        .skill-list-misc li:before {
+            font-family: "FontAwesome";
+            content: "\f074";
+            padding-right: 5px;
+            font-style: normal;
+            vertical-align: middle;
+            font-weight: 600;
+            color: #000000;
+        }
+
+
+        /*Copied from skills lists, actually education list under "education"*/
+        .skill-list-education li:before {
+            font-family: "FontAwesome";
+            content: "\f19d";
+            padding-right: 5px;
+            font-style: normal;
+            vertical-align: middle;
+            font-weight: 600;
+            color: #000000;
+        }
+
+        /*More space between education bullets*/
+        .skill-list-education li {
+            margin: 0 0 10px 0;
+        }
+
+
+        .skill-h {
+            /* underline heading */
+            text-decoration: underline solid rgb(245, 0, 0);
+            font-size: 4vh;
+        }
+
+
+        /* heading "pops" when mouse hovers */
+        .skill-h {
+            transition: all 0.2s;
+        }
+        
+        .skill-h:hover {
+            transform: scale(1.03);
+        }
+
+        /*list items "pop" when hovered over*/
+        li {
+            transition: all 0.2s;
+        }
+        li:hover {
+            transform: scale(1.02);
+        }
+
+
+        /***************************** DESIGN FOR JOBS TIMELINE starts HERE ******************************/
+
+        /* The actual timeline (the vertical ruler) */
+        .timeline {
+            position: relative;
+            max-width: 1200px;
+            margin: 0 auto;
+            /*Float left keeps timeline from not overflowing over nav buttons on mobile*/
+            float: left;
+            /*This is distance from top of line to begining of content, doesn't affect distance between navbar and line*/
+            padding-top: 30px;
+        }
+
+        /* The actual timeline (the vertical ruler) */
+        .timeline::after {
+            content: '';
+            position: absolute;
+            width: 6px;
+            background-color: #353439;
+            top: 0;
+            bottom: 0;
+            left: 50%;
+            margin-left: -3px;
+        }
+
+        /* Container around content */
+        .time-container {
+            padding: 10px 40px;
+            position: relative;
+            background-color: inherit;
+            width: 50%;
+            display: block;
+        }
+
+        /* The circles on the timeline */
+        .time-container::after {
+            content: '';
+            position: absolute;
+            width: 25px;
+            height: 25px;
+            right: -12.1px;
+            background-color: white;
+            border: 4px solid rgb(245, 0, 0);
+            top: 15px;
+            border-radius: 50%;
+            z-index: 1;
+        }
+
+        /* Place the container to the left */
+        .time-left {
+            left: 0;
+        }
+
+        /* Place the container to the right */
+        .time-right {
+            left: 50%;
+        }
+
+        /* Add arrows to the left container (pointing right) */
+        .time-left::before {
+            content: " ";
+            height: 0;
+            position: absolute;
+            top: 22px;
+            width: 0;
+            z-index: 1;
+            right: 30px;
+            border: medium solid white;
+            border-width: 10px 0 10px 10px;
+            border-color: transparent transparent transparent #353439;
+        }
+
+        /* Add arrows to the right container (pointing left) */
+        .time-right::before {
+            content: " ";
+            height: 0;
+            position: absolute;
+            top: 22px;
+            width: 0;
+            z-index: 1;
+            left: 30px;
+            border: medium solid #353439;
+            border-width: 10px 10px 10px 0;
+            border-color: transparent #353439 transparent transparent;
+        }
+
+        /* Fix the circle for containers on the right side */
+        .time-right::after {
+            left: -12.4px;
+        }
+
+        /* The actual content */
+        .time-content {
+            padding: 20px 17px;
+            background-color: #353439;
+            position: relative;
+            border-radius: 6px;
+            transition: all 0.2s;
+        }
+
+        .time-content:hover {
+            transform: scale(1.05);
+        }
+
+
+
+
+
+        /*****Heading, date and regular text for timeline content goes here*******/
+
+        .time-head {
+            color: #FFFFFF;
+            margin-bottom: 10px;
+            font-size: 4vh;
+            text-shadow: 3px 2px rgba(0, 0, 0, 0.418);
+            cursor: pointer;
+        }
+
+        .time-date {
+            color: #FFFFFF;
+            font-style: italic;
+            font-size: 3vh;
+            margin-bottom: 6px;
+
+        }
+
+        .time-text {
+            color: #FFFFFF;
+            font-size: 15px;
+            text-shadow: 3px 2px rgba(0, 0, 0, 0.418);
+            text-align: justify;
+            margin-top: 5px;
+            line-height: 1.6;
+        }
+
+
+        .time-job {
+            color: #FFFFFF;
+            font-style: italic;
+            font-size: 3vh;
+            margin-bottom: 2px;
+            text-shadow: 3px 2px rgba(0, 0, 0, 0.418);
+
+        }
+
+
+        /* little laptop icon from FontAwesome before each job italic in content windows to make it more visually appealing */
+        .time-job:before {
+            font-family: "FontAwesome";
+            content: "\f109";
+            padding-right: 10px;
+            font-style: normal;
+            vertical-align: middle;
+            font-weight: 400;
+            color: #FFFFFF;
+        }
+
+
+        .time-date:before {
+            font-family: "FontAwesome";
+            content: "\f073";
+            padding-right: 12px;
+            font-style: normal;
+            vertical-align: middle;
+            font-weight: 100;
+            color: #FFFFFF;
+        }
+
+
+
+
+
+
+        /*****Heading, date and regular text for timeline content ends here*******/
+
+
+
+
+
+
+
+
+        /* Media queries - Responsive timeline on screens less than 600px wide */
+        @media screen and (max-width: 600px) {
+
+            /* Place the timelime to the left */
+            .timeline::after {
+                left: 10px;
+            }
+
+            /* Full-width containers */
+            .time-container {
+                width: 100%;
+                padding-left: 40px;
+                padding-right: 5px;
+            }
+
+            /* Make sure that all arrows are pointing leftwards */
+            .time-container::before {
+                left: 30px;
+                border: medium solid #353439;
+                border-width: 10px 10px 10px 0;
+                border-color: transparent #353439 transparent transparent;
+            }
+
+            /* Make sure all circles are at the same spot */
+            .time-left::after,
+            .time-right::after {
+                left: -2px;
+            }
+
+            /* Make all right containers behave like the left ones */
+            .time-right {
+                left: 0%;
+            }
+
+            .time-content {
+                padding: 15px 25px;
+            }
+
+
+            .time-text {
+                word-spacing: 3px;
+                font-size: 2.5vh;
+            }
+
+
+
+        }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        /***************************** DESIGN FOR JOBS TIMELINE ends HERE ******************************/
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <!-- left grey column with featured & picture -->
+        <div class="col left">
+            <div class="pic-frame">
+                <img class="pic"
+                    src="data:image/jpeg;base64,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">
+
+            </div>
+            <!-- slides begin here -->
+            <div class="slideshow-container" id="slideshow-container">
+                <!-- slide 1 -->
+                <div class="italicquote mySlides fade">
+                    <p class="quote">
+                        S ispod 30 godina mogu se pohvaliti s već dvije menadžerske pozicije iza sebe (Minidata i Mount
+                        Olympus),
+                        gdje sam pohvatao funkcioniranje motivacija zaposlenika i različite pristupe vođenju različitih
+                        vrsta zaposlenika.
+
+                    </p>
+
+                    <hr class="white-line">
+
+                    <p class="quote">
+                        Iako nije moj preferirana industrija (turizam i ugostiteljstvo), iskustvo kao Supervisor u Mount
+                        Olympus Resortu u Wisconsin Dellsu smatram posebno dragocjenim.
+                        Naučio sam mnogo o funkcioniranju velikih sustava s puno pokretnih dijelova, te bio nadređen
+                        internacionalnom i stvarno raznolikom timu od 20 ljudi.
+                    </p>
+
+                </div>
+                <!-- slide 1 end -->
+
+
+                <!-- slide 2 -->
+                <div class="italicquote mySlides fade">
+                    <p class="quote">
+                        Smatram se vrlo podatkovno orijentiranom osobom, i u utilitarnom i u tehničkom smislu pojma.
+                        Razumijem kako brzo isčitati važno, grupirati i obrađivati podatke.
+                    </p>
+
+                    <hr class="white-line">
+
+                    <p class="quote">
+                        S tehničkog aspekta, bio sam demonstrator iz Otkrivanja znanja u bazama podataka na EFZG-u (data
+                        mining), popravljao i dorađivao
+                        XML payroll datoteke za ePoreznu, uvozio, popravljao i ponovno izvozio velike CSV-ove proizvoda
+                        za Foodin web trgovinu, razumijem teoriju i arhitekturu
+                        relacijskih ali i polustrukturiranih i nestrukturiranih baza podataka...
+                    </p>
+
+                </div>
+
+                <!-- slide 2 end -->
+
+
+
+
+                <!-- slide 3 -->
+                <div class="italicquote mySlides fade">
+                    <p class="quote">
+                        Smjer Menadžerska informatika na EFZG-u do kraja me usmjerio prema IT-u, dok sam kroz radno
+                        iskustvo i preddiplomski studij stekao poslovna
+                        i menadžerska znanja.
+                    </p>
+
+                    <hr class="white-line">
+
+                    <p class="quote">
+                        Ovaj CV pisan je iz nule u "vanilla" HTML-u, CSS-u i JavaScriptu kao osobni izazov. Snalazim se i s jQuery-jem i Bootstrapom.
+                    </p>
+
+                </div>
+                <!-- slide 3 end -->
+
+
+
+
+
+
+
+
+
+            </div>
+            <!-- slides end here -->
+
+            
+            <!-- dots for changin slides go here -->
+            <div class="dot-container-2">
+                <!-- onClick run functions to change slide, also run function that changes "clicked" variable so autorun of slides is cancelled -->
+                    <span class="dot" onclick="currentSlide(1);clickedFlip();"></span>
+                    <span class="dot" onclick="currentSlide(2);clickedFlip();"></span>
+                    <span class="dot" onclick="currentSlide(3);clickedFlip();"></span>
+
+            </div>
+
+
+
+
+
+        </div>
+        <!-- right white 75% column with contact info & main content -->
+        <div class="col right">
+            <div class="contact">
+                <h1 class="name">DOMAGOJ ŠKENDER <span class="grey-ital-oec"> || univ.bacc.oecc</span></h1>
+                <p class="contact-p"><span class="grey-ital">Datum rođenja: </span> 8. lipnja 1992.</p>
+                <p class="contact-p"><span class="grey-ital">Adresa: </span> Vinogradska 18, 10 000 Zagreb</p>
+                <p class="contact-p"><span class="grey-ital">GSM: </span> <a href="tel:+385989091078">+385 98 909 1078</a></p>
+                <p class="contact-p"><span class="grey-ital">e-mail: </span> <a
+                        href="mailto:d.skender92@gmail.com">d.skender92@gmail.com</a></p>
+
+            </div>
+            <hr>
+            <!-- top navbar with auto changing selected topic which acts as content title / changes depending on btn clicked -->
+            <div class="navbar">
+                <h2 class="selected-topic">O meni</h2>
+
+                <div class="btn-group">
+                    <button class="nav-button btn-act" id="btn-1" autofocus>O meni</button>
+                    <button class="nav-button btn-act" id="btn-4">Znanja i vještine</button>
+                    <button class="nav-button btn-act" id="btn-3">Obrazovanje</button>
+                    <button class="nav-button btn-act" id="btn-2">Radno iskustvo</button>
+                    <button class="nav-button btn-act" id="btn-5">Volontiranje</button>
+                </div>
+
+
+
+            </div>
+            <div class="content">
+                <div class="meat o-meni">
+                    <p>
+                        Apsolvent sam na EFZG-u, smjer Menadžerska informatika, zaljubljenik u software s jednom nogom u
+                        web developmentu i dizajnu a drugom u podatkovnoj znanosti. Ta zaljubljenost se iskristalizirala kroz
+                        godine i različite poslove, najzahtjevniji od kojih je definitivno bio onaj menadžera tvrtke za
+                        obračun plaća gdje sam osobno radio svaki aspekt payrolla za 13 tvrtki, uz upravljačke dužnosti.
+                    </p>
+
+                    <p>
+                        "Klik" sa JavaScriptom, SQL-om i IT-em općenito nastao je postepeno, kroz nekoliko poslova i iteracija.
+                        Poprilično ključan za isprofilirati taj interes definitivno je bio i smjer koji sam odabrao na fakultetu, koji mi
+                        je do kraja približio tematiku i odškrinuo vrata tehnologiji, naučio me "gdje gledati" i kako razmišljati više
+                        "inžinjerski". Od "mekših" vještina i znanja, moja stara fascinacija je oduvijek 
+                        psihologija, međuljudski odnosi, a od avanture u Americi posebice onboarding procesi. To iskustvo u zemlji koja je uostalom dala 
+                        Druckera, Portera i Forda, zbilja mi je otvorilo oči glede potrebe i prakse formaliziranih procesa treninga za posao.
+                    </p>
+
+                    <p>
+                        U slobodno vrijeme čitam (psihologija i geopolitika, personal development), igram valjda svaki
+                        reketni sport poznat modernom čovjeku (badminton, ping-pong, padel, tenis), kodiram i
+                        eksperimentiram s e-sportovima (Counter Strike), ali u zadnjem polju recimo da ima prostora za napredak.
+                    </p>
+                    <p>
+                        Osim toga, provodim vrijeme s prijateljima i zaručnicom Justinom, te stvaram digitalne portrete, često za majice i šalice, 
+                        od čega sam napravio mali <span style="font-style: italic;">side business</span>.
+                    </p>
+                </div>
+
+
+
+
+
+
+
+                <div class="meat radno-isk">
+                    <!--  JOBS TIMELINE vertical timeline design with content boxes on each side of timeline, that change to one side on mobile and push timeline to left side -->
+
+
+                    <div class="timeline">
+                        <div class="time-container time-right">
+                            <div class="time-content">
+                                <h2 class="time-head tc2">Croz d.o.o.</h2>
+                                <h4 class="time-job">Poslovni analitičar</h4>
+                                <h4 class="time-date">Lipanj 2020 - </h4>
+                                <p class="time-text">Razvoj poslovnih aplikacija, elicitacija i organizacija zahtjeva, ažuriranje ticketa, pisanje i ažuriranje specifikacija, komunikacija s klijentima i product ownerima.</p>
+                            </div>
+                        </div>
+                        <div class="time-container time-left">
+                            <div class="time-content">
+                                <h2 class="time-head tc1">Naprijed Commerce d.o.o.</h2>
+                                <h4 class="time-job">Web dizajner</h4>
+                                <h4 class="time-date">Travanj 2020 - Svibanj 2020</h4>
+                                <p class="time-text">Ispomoć pri osmišljanju UI-a webshopa, dizajn contenta u Adobe
+                                    Photoshopu (banneri, slideri, blockovi).</p>
+                            </div>
+                        </div>
+                        <div class="time-container time-right">
+                            <div class="time-content">
+                                <h2 class="time-head tc2">Foodin Software d.o.o.</h2>
+                                <h4 class="time-job">Junior Wordpress Developer</h4>
+                                <h4 class="time-date">Studeni 2019 - Travanj 2020</h4>
+                                <p class="time-text">Sukreiranje contenta za stranicu, konceptualno sukreiranje software
+                                    arhitekture (npr. integracije sustava narudžbi sa Slackom kako bi dolazile
+                                    dostavljačima), unos virtualnih proizvoda i dizajn njihovih međuovisnosti,
+                                    marketinški brainstorming te dizajn onboarding procesa za buduće dostavljače.</p>
+                            </div>
+                        </div>
+                        <div class="time-container time-left">
+                            <div class="time-content">
+                                <h2 class="time-head tc3">Mount Olympus Resort</h2>
+                                <h4 class="time-job">Front Desk Supervisor</h4>
+                                <h4 class="time-date">Lipanj 2019 – Listopad 2019</h4>
+                                <p class="time-text">U sklopu Work and Travel USA programa radio sam na objedinjenoj
+                                    recepciji sustava zabavnog i vodenog parka te resorta od 1.600 soba. Nakon 3 – 4
+                                    tjedna sam promaknut u supervizora gdje sam rukovodio međunarodnim timom od 20 ljudi
+                                    (Kina, Jamajka, Mongolija, Dominikanska Republika...), uz dodatni zadatak izglađivanja
+                                    prigovora gostiju. Pred kraj sezone uglavnom pomagao u dizajnu i doradi onboarding
+                                    procesa za sljedeću generaciju W&T studenata.</p>
+                            </div>
+                        </div>
+                        <div class="time-container time-right">
+                            <div class="time-content">
+                                <h2 class="time-head tc4">Lankea d.o.o.</h2>
+                                <h4 class="time-job">Junior Magento Developer</h4>
+                                <h4 class="time-date">Listopad 2018 – Lipanj 2019</h4>
+                                <p class="time-text">Kodiranje i dorada pojedinačnih stranica, obrada i unos proizvoda u
+                                    webshop za online supermarket, općeniti troubleshooting s Magento CMS-om te dizajn
+                                    vizualnih elemenata web stranice. </p>
+                            </div>
+                        </div>
+                        <div class="time-container time-left">
+                            <div class="time-content">
+                                <h2 class="time-head tc5">Minidata d.o.o.</h2>
+                                <h4 class="time-job">Voditelj obračuna plaća</h4>
+                                <h4 class="time-date">Lipanj 2016 – Travanj 2018</h4>
+                                <p class="time-text">Obračun plaća i davanja državi, savjetovanje o porezu na dohodak,
+                                    izrada izvještaja za računovodstvo, financije i HR. Generiranje i predaja izvještaja
+                                    državi kroz ePoreznu (XML). Zadnjih godinu dana proveo kao menadžer i vodio tim od 5
+                                    ljudi. Osobno bio zadužen za plaće otprilike 3.000 zaposlenika (hotel Le Meridien
+                                    Lav, Badel 1862, Zagrebačka Pivovara, TIA partner, Fidelta, GlaxoSmithKline, L'Oreal...).</p>
+
+                                    <p class="time-text">Na
+                                        ovome poslu sam stekao strast prema softveru i fascinaciju objektno orijentiranim
+                                        programiranjem (primarno kroz VBA macroe i in-house software za obračun plaća) i arhitekturama baza podataka. Također, naučio sam mnogo o
+                                        menadžmentu i poslovnoj komunikaciji, budući da sam s nepunih 25 godina bio
+                                        odgovoran za pravilnu isplatu primanja tolikog broja ljudi te za ispravno plaćanje
+                                        davanja i izvještavanje Poreznoj upravi.</p>
+
+                                        <p class="time-text">Ovdje sam učinio i svoje prve, ograničene, "programerske" korake, u vidu kompleksnih Excel automatskih izvještaja 
+                                            i kalkulatora (npr. za otpremnine, koje su u RH relativno kompleksne i teške za jednostavno objasniti klijentu koji 
+                                            nije upućen u tematiku).
+                                        </p>
+
+
+
+                            </div>
+                        </div>
+                        <div class="time-container time-right">
+                            <div class="time-content">
+                                <h2 class="time-head tc6">Promocija plus d.o.o.</h2>
+                                <h4 class="time-job">Anketar CATI metodom</h4>
+                                <h4 class="time-date">Travanj 2013 – Lipanj 2016</h4>
+                                <p class="time-text">Moj prvi ozbiljniji posao, telefonsko provodođenje političkih
+                                    anketa (CRO Demoskop), anketa o navikama potrošača te rad kao tajni kupac za
+                                    autosalone i leasing kuće. Pomoć u obradi prikupljenih podataka.</p>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+                </div>
+
+
+                <div class="meat obrazov">
+                    <div class="skills-col education">
+                        <ul class="skill-list-education">
+                            <li>Sveučilište u Zagrebu, Ekonomski fakultet, <a
+                                    href="https://www.efzg.unizg.hr/menadzerska-informatika-15527/15527"
+                                    style="font-weight: 900;" target="_blank">Diplomski sveučilišni studij Menadžerske
+                                    informatike</a>
+                                (2018 - 2020), završio s vrlo dobrim uspjehom
+                            </li>
+                            <li>Sveučilište u Zagrebu, Ekonomski fakultet, <a
+                                    href="https://www.efzg.unizg.hr/studiji-29719/integrirani-preddiplomski-i-diplomski-sveucilisni-studiji/integrirani-preddiplomski-i-diplomski-sveucilisni-studij-poslovna-ekonomija/22350"
+                                    target="_blank" style="font-weight: 900;">Preddiplomski sveučilišni studij Poslovne
+                                    ekonomije</a>
+                                (2011 - 2018), završio s vrlo dobrim uspjehom
+                            </li>
+                            <li>II. Gimnazija Zagreb (2007 – 2011), završio s odličnim uspjehom</li>
+                            <li><span style="font-weight: 900;">SAP Code Week</span> trotjedna Web Development radionica
+                                - <span style="font-style: italic;">HUB385 (2019)</span></li>
+                            <li><a href="https://www.udemy.com/course/the-complete-javascript-course/" target="_blank"
+                                    style="font-weight: 900;">Jonas Schmedtmann Complete 2020 JavaScript course</a> -
+                                <span style="font-style: italic;">Udemy</span> (2020)</li>
+                    </div>
+                </div>
+
+
+
+
+
+
+
+
+
+                <div class="meat skills">
+
+                    <div class="skills-col tech-skill">
+                        <h3 class="skill-h">IT | Tech</h2>
+                            <ul class="skill-list-it">
+                                <li>MS Office (Word, Excel – napredni korisnik, Powerpoint, Access)</li>
+                                <li>VBA – Visual Basic for Applications – osnovno znanje, macro jezik Excela</li>
+                                <li>HTML 5</li>
+                                <li>CSS 3 + Bootstrap</li>
+                                <li>Korištenje API-ja</li>
+                                <li>JavaScript + jQuery</li>
+                                <li>Modeliranje baza i skladišta podataka</li>
+                                <li>SQL</li>
+                                <li>Osnovni principi Data mininga, koristio Weka školski software</li>
+                                <li>Alfresco ECM</li>
+                                <li>GitLab</li>
+                                <li>Jazz RTC i RRC</li>
+                                <li>Alati za izgradnju wikija i productivity management (Confluence, Notion)</li>
+                            </ul>
+
+
+
+
+                    </div>
+
+                    <div class="skills-col soft-skill">
+                        <h3 class="skill-h">Poslovna | Soft skills</h2>
+                            <ul class="skill-list-soft">
+                                <li>Menadžment i organizacija</li>
+                                <li>Dizajn onboarding procesa</li>
+                                <li>Poslovne financije</li>
+                                <li>Osnove računovodstva</li>
+                                <li>Upravljanje rizicima</li>
+                                <li>Obračun plaća i dohodovni porezi</li>
+                                <li>Poslovna analiza</li>
+                                <li>Agilna metodologija razvoja softvera (SCRUM)</li>
+                                <li>Waterfall pristup razvoju softvera</li>
+
+                            </ul>
+
+
+
+
+                    </div>
+
+
+                    <div class="skills-col other-skill">
+                        <h3 class="skill-h">Ostalo</h2>
+                            <ul class="skill-list-misc">
+                                <li>Vozačka dozvola B kategorije</li>
+                                <li>Adobe Photoshop – obrada fotografija, dizajn (napredan korisnik)</li>
+                                <li>Adobe Premiere Pro – obrada videa</li>
+                                <li>Iskustvo rada sa raznim komunikacijskim, kolaborativnim i Project Management
+                                    software-ima (Slack, Asana, Confluence)</li>
+                                <li>Engleski jezik (de facto <span style="font-style: italic;">native speaker)</span>
+                                </li>
+                                <li>Njemački jezik (pasivno)</li>
+
+                            </ul>
+
+
+
+
+                    </div>
+
+                </div>
+
+                <div class="meat volontiranje">
+                    <p>
+                        Jedno meni srcu drago iskustvo je definitivno studentska udruga <a href="https://hsa.hr/"
+                            style="font-weight: 900;" target="_blank">HSA</a> u kojoj sam od
+                        11. 2017 do kraja 2018. pisao za studentski poslovni list <a href="http://manager-magazine.com/"
+                            style="font-weight: 900;" target="_blank">Manager</a>.
+                        Budući da sam u to vrijeme dovršavao preddiplomski studij i intenzivno radio u obračunu plaća,
+                        nisam baš mogao
+                        posvećivati vremena koliko bih htio udruzi, pa mi je pisanje došlo kao idealni kompromis i
+                        kreativni outlet.
+                    </p>
+
+                    <p>
+                        Na diplomskom studiju Menadžerske informatike postao sam i <span
+                            style="font-weight: 900;">demonstrator</span> profesorici Pejić-Bach iz predmeta
+                        <a href="https://www.efzg.unizg.hr/default.aspx?id=16323" style="font-weight: 900;"
+                            target="_blank">Otkrivanje znanja u bazama podataka.</a>
+                        Pomažući u pripremi nastave uspio sam stvoriti solidno razumijevanje principa i tehnika data
+                        mininga kroz rad u školskom softwareu Weka. Ne bih imao
+                        ništa protiv vraćanju klasifikacijama, klasterima, asocijativnim pravilima itd., tematika je
+                        jako zanimljiva, dobro rezonira s mojim ionako
+                        podatkovno orijentiranim načinom razmišljanja, te za sada "koketiram" s Tensorflow.js libraryjem
+                        budući da se ipak želim za sada naslanjati na poznato
+                        (JavaScript) kako se ne bih previše rastegnuo.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+
+
+    <script type="text/javascript">
+        // TAB BUTTONS FUNCTIONS
+        // Variable topic used to fill up .selected-topic class
+        var topic = document.querySelector(".selected-topic").textContent;
+
+        var actBtn = 1;
+
+
+
+
+        // O meni button
+        document.getElementById("btn-1").addEventListener("click", function () {
+            topic = document.getElementById("btn-1").textContent;
+
+            actBtn = 1;
+            document.querySelector(".selected-topic").textContent = topic;
+            document.querySelector(".o-meni").style.display = "block";
+            document.querySelector(".volontiranje").style.display = "none";
+            document.querySelector(".radno-isk").style.display = "none";
+            document.querySelector(".obrazov").style.display = "none";
+            document.querySelector(".skills").style.display = "none";
+
+            switchBold();
+
+            /*makes focus (which has some css animation tied to it) switch to clicked button*/
+            document.querySelector("#btn-1").focus();
+
+            removeUnderline();
+            addUnderline(actBtn);
+
+
+        });
+
+
+
+        // pic click performs same function as "O meni" btn
+        document.querySelector(".pic").addEventListener("click", function () {
+            topic = document.getElementById("btn-1").textContent;
+
+            actBtn = 1;
+            document.querySelector(".selected-topic").textContent = topic;
+            document.querySelector(".o-meni").style.display = "block";
+            document.querySelector(".volontiranje").style.display = "none";
+            document.querySelector(".radno-isk").style.display = "none";
+            document.querySelector(".obrazov").style.display = "none";
+            document.querySelector(".skills").style.display = "none";
+
+            switchBold();
+
+            removeUnderline();
+            addUnderline(actBtn);
+
+        });
+
+
+
+        // radno iskustvo button
+        document.getElementById("btn-2").addEventListener("click", function () {
+            topic = document.getElementById("btn-2").textContent;
+
+            actBtn = 2;
+            document.querySelector(".selected-topic").textContent = topic;
+            document.querySelector(".o-meni").style.display = "none";
+            document.querySelector(".volontiranje").style.display = "none";
+            document.querySelector(".radno-isk").style.display = "block";
+            document.querySelector(".obrazov").style.display = "none";
+            document.querySelector(".skills").style.display = "none";
+
+            switchBold();
+
+            removeUnderline();
+            addUnderline(actBtn);
+
+        });
+
+        // obrazovanje button
+        document.getElementById("btn-3").addEventListener("click", function () {
+            topic = document.getElementById("btn-3").textContent;
+
+            actBtn = 3;
+            document.querySelector(".selected-topic").textContent = topic;
+            document.querySelector(".o-meni").style.display = "none";
+            document.querySelector(".volontiranje").style.display = "none";
+            document.querySelector(".radno-isk").style.display = "none";
+            document.querySelector(".obrazov").style.display = "block";
+            document.querySelector(".skills").style.display = "none";
+
+            switchBold();
+
+            removeUnderline();
+            addUnderline(actBtn);
+
+        });
+
+        // skills button
+        document.getElementById("btn-4").addEventListener("click", function () {
+            topic = document.getElementById("btn-4").textContent;
+
+            actBtn = 4;
+            document.querySelector(".selected-topic").textContent = topic;
+            document.querySelector(".o-meni").style.display = "none";
+            document.querySelector(".volontiranje").style.display = "none";
+            document.querySelector(".radno-isk").style.display = "none";
+            document.querySelector(".obrazov").style.display = "none";
+            document.querySelector(".skills").style.display =
+            "table"; /*Not block, table, inner divs are 3 rows so not block*/
+
+            // The part that handles turning columns into block so they stack goes here:
+            wideControl(wide);
+            switchBold();
+
+            removeUnderline();
+            addUnderline(actBtn);
+
+        });
+
+        // volontiranje button
+        document.getElementById("btn-5").addEventListener("click", function () {
+            topic = document.getElementById("btn-5").textContent;
+
+            actBtn = 5;
+            document.querySelector(".selected-topic").textContent = topic;
+            document.querySelector(".o-meni").style.display = "none";
+            document.querySelector(".volontiranje").style.display = "block";
+            document.querySelector(".radno-isk").style.display = "none";
+            document.querySelector(".obrazov").style.display = "none";
+            document.querySelector(".skills").style.display = "none";
+
+            switchBold();
+
+            removeUnderline();
+            addUnderline(actBtn);
+
+        });
+
+
+
+
+        //featured italics animation functions (makes slider work by pressing dots which call function):
+        var slideIndex = 1;
+        showSlides(slideIndex);
+
+        function plusSlides(n) {
+            showSlides(slideIndex += n);
+        }
+
+        function currentSlide(n) {
+            showSlides(slideIndex = n);
+        }
+
+        function showSlides(n) {
+            var i;
+            var slides = document.getElementsByClassName("mySlides");
+            var dots = document.getElementsByClassName("dot");
+            if (n > slides.length) {
+                slideIndex = 1
+            }
+            if (n < 1) {
+                slideIndex = slides.length
+            }
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+            }
+            slides[slideIndex - 1].style.display = "block";
+            dots[slideIndex - 1].className += " active";
+        }
+
+
+        // Condition tied to dot buttons that start this function, stops slider from automatically flipping featured italics after certain amount of time after dot press
+        var clicked = false;
+
+        function clickedFlip() {
+            clicked = true;
+        }
+
+        // Slides change automatically after 24 sec
+        function timedSlide() {
+            if (slideIndex == 1 && clicked == false) {
+                currentSlide(2);
+            } else if (slideIndex == 2 && clicked == false) {
+                currentSlide(3);
+            } else if (slideIndex == 3 && clicked == false) {
+                currentSlide(1);
+            }
+            // sets how many seconds until slide change
+            setTimeout(timedSlide, 24000);
+        }
+
+
+
+        timedSlide();
+
+        // Restart the automatic changing of slides after enough seconds to read section>check for status of "clicked" every X seconds and restarts process
+        function restartSlides() {
+            if (clicked == true) {
+                clicked = false;
+            }
+            // Function runs every 30 seconds and restart the timer of slides which is stopped if you click a dot button
+            setTimeout(restartSlides, 30000);
+        }
+
+        restartSlides();
+
+
+
+
+
+
+
+        /* JS media query so skills becomes block on mobile       Rembember: var actBtn = 1; - button numbers */
+
+        var wide = window.matchMedia(
+        "(max-width: 600px)"); /*will need to change skill column (skills-col) to display: block;  for < 600px width */
+
+        // Keeps it responsive even when changin media in dev tools within session (stable even in unlikely non-real-world scenario)
+        function wideControl(wide) {
+            var x, i;
+            x = document.querySelectorAll(".skills-col");
+            if (wide.matches && actBtn == 4) {
+                for (i = 0; i < x.length; i++) {
+                    x[i].style.display = "block";
+                }
+            } else if (wide.matches == false && actBtn == 4) {
+                for (i = 0; i < x.length; i++) {
+                    x[i].style.display = "table-cell";
+                }
+            }
+        }
+
+        // function runs on startup and on press of btn 4, checks for width being 600px, stacks 3 skills columns (.skills-col) on mobile (block), horizontal on pc screen
+        wideControl(wide);
+        // Listener for media change (600px width)
+        wide.addListener(wideControl);
+
+        //wide.matches == true / false - key for using JS functions specifically depending on mobile/pc 
+
+
+        /*function to attach to buttons so it changes active topic to bold on mobile since the "current topic" h2 is removed on mobile*/
+        // returns other buttons back to 400 and changes active button (which we use the actBtn variable to fetch most easily) to bold so you know where you are
+        function switchBold() {
+            var x, y, z, i;
+            z = document.querySelectorAll(".nav-button");
+            for (i = 0; i < z.length; i++) {
+                z[i].style.fontWeight = "400";
+            }
+            y = actBtn;
+            x = document.querySelector("#btn-" + actBtn);
+            x.style.fontWeight = "500";
+        }
+
+
+
+    // Timeline window headings now open webpages of previous employers on click
+    document.querySelector(".tc1").addEventListener("click", function () {
+        var win = window.open("https://naprijed.com.hr/", '_blank');
+        win.focus();
+    })
+
+    document.querySelector(".tc2").addEventListener("click", function () {
+        var win = window.open("https://foodin.io/hr/", '_blank');
+        win.focus();
+    })
+
+    document.querySelector(".tc3").addEventListener("click", function () {
+        var win = window.open("https://www.mtolympuspark.com/", '_blank');
+        win.focus();
+    })
+
+    document.querySelector(".tc4").addEventListener("click", function () {
+        var win = window.open("https://www.lankea.com/", '_blank');
+        win.focus();
+    })
+
+    document.querySelector(".tc5").addEventListener("click", function () {
+        var win = window.open("http://www.minidata.hr/", '_blank');
+        win.focus();
+    })
+
+    document.querySelector(".tc6").addEventListener("click", function () {
+        var win = window.open("https://promocija-plus.com/hr/", '_blank');
+        win.focus();
+    })
+
+
+
+
+/*functions that remove underline class from other buttons and add underline to pressed button (called on button presses) - done via btn-act class*/
+function removeUnderline () {
+var del;
+del = document.querySelectorAll(".nav-button");
+for (i=0; i < del.length; i++) {
+    console.log(del[i].classList);
+    del[i].classList.remove("btn-act");
+}
+}
+
+
+
+function addUnderline (actBtn) {
+    removeUnderline();
+    document.querySelector("#btn-" + actBtn).classList.add("btn-act");
+}
+
+// Removes all underlines at start - followed by function that adds it back to O meni
+removeUnderline();
+
+// Function that runs on start and makes sure the O meni button has underline class at start
+document.querySelector("#btn-1").classList.add("btn-act");
+
+
+
+
+
+
+
+    </script>
+</body>
+
+
+
+</html>
